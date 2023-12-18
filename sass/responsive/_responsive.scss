@@ -1,0 +1,245 @@
+// ====navbar resoponsive=-==============
+@include respond-to($button_phone) {
+  .nav-item {
+    display: inherit;
+  }
+  .navbar .container .nav_icon {
+    margin-top: 20px;
+  }
+}
+@include respond-to($mobile) {
+  .nav-item {
+    display: inherit;
+  }
+  .navbar .container .nav_icon {
+    margin-top: 20px;
+  }
+}
+@include respond-to($medium) {
+  .nav-item {
+    display: inherit;
+  }
+  .navbar .container .nav_icon {
+    margin-top: 20px;
+  }
+}
+@include respond-to($desktop) {
+  .nav-item {
+    display: inherit;
+  }
+  .navbar .container .nav_icon {
+    margin-top: 20px;
+  }
+}
+// =========banner part responsive startt-==================
+@include respond-to($button_phone) {
+  .banner_part {
+    padding: 2px;
+  }
+  .banner_part .part1 h2 {
+    padding: 0px;
+    font-size: large;
+    font-weight: 600;
+    width: 300px !important;
+  }
+  .banner_part .part1 p {
+    width: 280px !important;
+  }
+  .banner_part .part1 a {
+    padding: 9px 14px;
+    font-size: 10px;
+  }
+  .banner_part .container .box {
+    margin-top: 46px !important;
+    /* margin-right: 104px; */
+    transform: none;
+    margin-left: -42px !important;
+  }
+}
+@include respond-to($mobile) {
+  .banner_part {
+    padding: 16px;
+  }
+  .banner_part .part1 h2 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .row > * {
+    padding: 0px 3px;
+  }
+  .banner_part .part1 p {
+    font-size: 18px;
+    font-weight: 400;
+    width: 350px !important;
+  }
+  .banner_part .container .box {
+    height: 650px;
+    width: 330px;
+    background-color: white;
+    /* transform: rotate(20deg); */
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 49px !important;
+    margin-left: 10px !important;
+    transform: initial !important;
+    /* margin: 50px; */
+  }
+}
+@include respond-to($medium) {
+  .banner_part {
+    padding: 16px;
+  }
+  .banner_part .container .box {
+    height: 650px;
+    width: 330px;
+    background-color: white;
+    /* transform: rotate(20deg); */
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 49px;
+    margin-left: 108px;
+  }
+}
+@include respond-to($desktop) {
+  .banner_part {
+    padding: 16px;
+  }
+  .banner_part .container .box {
+    height: 650px;
+    width: 330px;
+    background-color: white;
+    /* transform: rotate(20deg); */
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+  }
+}
+@include respond-to($largedesktop) {
+  .banner_part .part1 p {
+    width: 425px;
+  }
+}
+// ==============get part responsive start-==================
+@include respond-to($button_phone) {
+
+  .get_part .container .headline .dot {
+    width: 100%;
+
+    justify-content: flex-start;
+  }
+  .get_part .container .headline h3 {
+    text-align: inherit;
+    font-size: 20px;
+    width: 100%;
+  }
+  .get_part .container .box_get .col-lg-4 .text p {
+	font-size: 20px;
+
+}
+.get_part .text {
+
+	width: 300px;
+}
+}
+@include respond-to($mobile){
+    .get_part .container .headline .dot {
+        width: 100%;
+    
+        justify-content: flex-start;
+      }
+      .get_part .container .headline h3 {
+        text-align: inherit;
+        font-size: 30px;
+        width: 100%;
+      }
+      .get_part .container .box_get .col-lg-4 .text p {
+        font-size: 20px;
+    
+    }
+    .get_part .text {
+    
+        width: 300px;
+    }
+    .get_part .box_get .row{
+       
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            padding-rightg: 20px;
+            /* padding-left: 20px; */
+            /* padding-right: 20px; */
+     
+    }
+}
+// =============thumbspart start-========================
+@include respond-to($button_phone){
+    .thumb_part{
+        padding-top: 50px;
+        img, svg {
+            vertical-align: middle;
+            display: none;
+        }
+        .col-lg-5{
+            width: 300px;
+            padding: 10px;
+          .thumbs_text h2 {
+              font-size: 38px !important;             
+            }
+           .thumbs_text p {
+                font-size: 19px;
+     
+            }
+        }
+    }
+}
+@include respond-to($mobile){
+    .thumb_part{
+        padding-top: 50px;
+    }
+    .thumb_part .container .col-lg-7 {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        justify-content: flex-start !important;
+        /* align-items: flex-start; */
+    }
+    .col-lg-5{
+        width: 310px !important;
+        padding: 15px;
+      .thumbs_text h2 {
+          font-size: 40px !important;             
+        }
+       .thumbs_text p {
+            font-size: 24px;
+ 
+        }
+    }
+}
+@include respond-to($medium){
+    .thumb_part{
+        padding-top: 50px;
+    }
+    .thumb_part .container .col-lg-7 {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        justify-content: flex-start !important;
+        /* align-items: flex-start; */
+    }
+    .col-lg-5{
+        width: 500px;
+        padding:0 50px;
+      .thumbs_text h2 {
+          font-size: 40px !important;             
+        }
+       .thumbs_text p {
+            font-size: 24px;
+ 
+        }
+    }
+}
+// ============thumbs part end-=====================================

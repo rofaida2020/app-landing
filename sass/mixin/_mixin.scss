@@ -1,0 +1,26 @@
+@mixin font($font_size , $font_weight , $font_colour){
+    font-family: $font_family1;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    color: $font_colour;
+}
+@mixin font2($font_size , $font_weight , $font_colour){
+    font-family: $font_family2;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    color: $font_colour;
+}
+@mixin button($border-radius){
+    padding: 17px 35px;
+    background: linear-gradient(to left, #FFA979 , #FF6231 );
+    border-radius: $border-radius;
+}
+// ==========responsive//////
+// _mixins.scss
+
+@mixin respond-to($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+  

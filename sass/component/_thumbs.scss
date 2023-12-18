@@ -1,0 +1,43 @@
+.thumb_part{
+    .container{
+        .col-lg-7{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .col-lg-5{
+            .text_icon{
+                font-size: 5px;
+                color: red;
+            }
+            .thumbs_text{
+                h2{
+                  @include font2(50px , 600 ,black);
+
+                }
+                p{
+                    @include font2(20px , 400 , #888888);
+                    line-height: 1;
+                    margin: 20px 0 ;
+                }
+            }
+            .thumbs_check_flex{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                .thumbs_check{
+                    display: flex;
+                    column-gap: 20px;
+                    align-items: center;
+                    i{
+                        color: red;
+                    }
+                    span{
+                        @include font2(16px , 400 , #888888)
+                    }
+                }
+            }
+        }
+    }
+}

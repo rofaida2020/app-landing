@@ -1,0 +1,45 @@
+.navbar{
+    padding: 15px;
+    .container{
+        width: 1800px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+            a {
+                @include font(16px, 400 , white);
+                transition: all linear 0.4s;
+                &:hover{
+                    color: $color;
+                }
+            
+            }
+             .link_free{
+                border: 1px solid white;
+                border-radius: 30px;
+                padding: 5px 20px;
+                transition:  all linear 0.4s;
+                &:hover{
+                    border-color: $color;
+                    color: red;
+                    border: 1px solid red;
+                }
+            }
+        }
+        .nav_icon{
+            display: flex;
+            column-gap: 10px;
+            i{
+                color: $color;
+                font-size: 20px;
+            }
+            a{
+                @include font(16px , 400, white);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,91 @@
+.banner_part{
+    padding: 100px;
+    .container{
+        
+        .box{
+            height: 650px;
+            width: 330px;
+            background-color: white;
+            transform: rotate(20deg);
+            padding: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            // align-items: center;
+            .box_nav{
+                img{
+                    transform: rotate(-14deg);
+                }
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .icon  {
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+           a{
+            color: black;
+            font-size: 20px;
+           }
+            
+
+                }
+            }
+            .box_banner{
+                background: url('/images/Vector_2.png');
+            
+                }
+             .banner_text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p{
+@include font2(28px , 600 , black);
+text-align: center;
+                }
+                span{
+                    @include font(16px , 400 , #888888);
+                    text-align:center;
+                    padding: 25px 0 ;
+                }
+                a{
+                    padding: 10px 50px;
+                    background-color: rgb(89, 89, 181);
+                    @include font(16px , 500 , white);
+                    border-radius: 10px;
+                    text-align: center
+                    
+                }
+             }
+            }
+        }
+        .part1{
+       padding-top: 41px;
+            span{
+               
+                @include font(12px , 500 , #FF6231);
+            }
+            h2{
+                @include font2(50px , 800, white);
+                line-height: 1.2;
+                padding: 10px 0 30px ;
+            }
+            p{
+                @include font2(28px , 500 , white);
+                width: 538px;
+                padding: 0 0 25px;
+            }
+            a{
+                @include button(30px) ;
+                @include font(16px , 500 , white);
+                border: 1px solid transparent;
+                transition: all linear 0.4s;
+               &:hover{
+               border: 1px solid #FF6231;
+               color: #FF6231;
+               background: transparent;;
+               }
+            }
+        }
+    }
